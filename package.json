@@ -1,0 +1,60 @@
+{
+    "name": "hapi-plugin-mpesa",
+    "version": "1.0.0",
+    "description": "HAPI plugin for MPESA payments in DRC",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "keywords": [
+        "hapi",
+        "plugin",
+        "mpesa",
+        "c2b",
+        "drc",
+        "Javascript",
+        "Typescript"
+    ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/anidel/hapi-plugin-mpesa.git"
+    },
+    "author": {
+        "name": "Aniello Del Sorbo",
+        "email": "anidel@gmail.com",
+        "url": "https://github.com/anidel"
+    },
+    "homepage": "https://github.com/anidel/hapi-plugin-mpesa",
+    "bugs": "https://github.com/anidel/hapi-plugin-mpesa/issues",
+    "devDependencies": {
+        "@types/jest": "^23.3.2",
+        "babel-eslint": "8.2.3",
+        "eslint": "4.19.1",
+        "eslint-config-standard": "11.0.0",
+        "eslint-plugin-import": "2.12.0",
+        "eslint-plugin-node": "6.0.1",
+        "eslint-plugin-promise": "3.8.0",
+        "eslint-plugin-standard": "3.1.0",
+        "hapi": "17.5.0",
+        "jest": "^23.6.0",
+        "typescript": "^3.0.3"
+    },
+    "engines": {
+        "node": ">=9.0.0"
+    },
+    "scripts": {
+        "clean": "rm -rf dist/",
+        "compile": "tsc",
+        "prepare": "npm run clean && npm run compile"
+    },
+    "peerDependencies": {
+        "hapi": ">=17.4.0"
+    },
+    "dependencies": {
+        "@types/hapi": "^17.0.19",
+        "soap": "^0.25.0"
+    },
+    "typings": "dist/index.d.ts",
+    "typescript": {
+        "definition": "dist/index.d.ts"
+    }
+}
