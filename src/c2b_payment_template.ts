@@ -1,32 +1,32 @@
 export interface C2BRequestParams {
-  token: string;
-  eventId?: string;
-  msisdn: string;
-  shortcode?: string;
-  currency?: string;
-  amount: string;
-  date?: string;
-  reference: string;
-  commandId?: string;
-  language?: string;
-  callBackChannel?: string;
-  callBackDestination: string;
-  surname: string;
-  initials: string;
+  token: string
+  eventId?: string
+  msisdn: string
+  shortcode?: string
+  currency?: string
+  amount: string
+  date?: string
+  reference: string
+  commandId?: string
+  language?: string
+  callBackChannel?: string
+  callBackDestination: string
+  surname: string
+  initials: string
 }
 
 export const c2b_payment_request_template = ({
   token,
-  eventId = "80049",
+  eventId = '80049',
   msisdn,
-  shortcode = "8337",
-  currency = "CDF",
+  shortcode = '8337',
+  currency = 'CDF',
   amount,
   date = new Date().getTime().toString(),
   reference,
-  commandId = "InitTrans_oneForallC2B",
-  language = "EN",
-  callBackChannel = "2",
+  commandId = 'InitTrans_oneForallC2B',
+  language = 'EN',
+  callBackChannel = '2', // async HTTP Post
   callBackDestination,
   surname,
   initials
@@ -105,4 +105,4 @@ export const c2b_payment_request_template = ({
         </Request>
       </gen:getGenericResult>
     </soapenv:Body>
-  </soapenv:Envelope>`;
+  </soapenv:Envelope>`
