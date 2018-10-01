@@ -1,3 +1,1 @@
-export {
-  IPlugin
-} from './hapi-plugin-mpesa'
+export { IPlugin, mpesaHapiPlugin } from "./hapi-plugin-mpesa";

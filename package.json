@@ -51,7 +51,8 @@
     },
     "dependencies": {
         "@types/hapi": "^17.0.19",
-        "soap": "^0.25.0"
+        "easy-soap-request": "^2.2.1",
+        "react-xml-parser": "^1.0.8"
     },
     "typings": "dist/index.d.ts",
     "typescript": {
